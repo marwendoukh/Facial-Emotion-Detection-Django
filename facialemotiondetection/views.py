@@ -1,5 +1,6 @@
 from django.http import HttpResponse
 import cv2
+from django.shortcuts import render
 
 
 def index(request):
@@ -14,7 +15,7 @@ def index(request):
     # Capture frame-by-frame
     ret, frame = video_capture.read()
 
-   
+
     # Detect faces in the image
     faces = faceCascade.detectMultiScale(
         frame,
@@ -26,4 +27,4 @@ def index(request):
 
     facesNumber ="Found {0} faces!".format(len(faces))
 
-    return HttpResponse(facesNumber)
+    return render(request, 'result.html', {'p': facesNumber})

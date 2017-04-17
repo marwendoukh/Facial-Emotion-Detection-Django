@@ -1,8 +1,11 @@
 from django.conf.urls import *
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
-from . import views
-#import website.image_recognition.views as detect
+
+from facialemotiondetection import views
+from . import view
+
+# import website.image_recognition.view as detect
 
 
 admin.autodiscover()
