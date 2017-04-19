@@ -1,1 +1,2 @@
-web: gunicorn gettingstarted.wsgi --log-file -
+web: gunicorn facialemotiondetection.wsgi.py
+
