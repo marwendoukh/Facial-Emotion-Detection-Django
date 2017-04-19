@@ -1,1 +1,1 @@
-web: gunicorn {{ facialemotiondetection }}.wsgi
+web: gunicorn facialemotiondetection.wsgi
