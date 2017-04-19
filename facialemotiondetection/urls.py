@@ -13,6 +13,8 @@ admin.autodiscover()
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
+    url(r'^welcome', views.welcome, name='welcome'),
+
     url(r'^admin/', include(admin.site.urls)),
     # ... your url patterns
 ]

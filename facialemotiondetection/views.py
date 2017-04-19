@@ -30,3 +30,8 @@ def index(request):
     # test
 
     return render(request, 'result.html', {'p': facesNumber})
+
+
+def welcome(request):
+    message = 'Django'
+    return render(request, 'welcome.html', {'p': message})
