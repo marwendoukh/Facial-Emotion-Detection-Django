@@ -27,5 +27,6 @@ def index(request):
 
     # print faces found ......
     facesNumber ="Found {0} faces!".format(len(faces))
+    # test
 
     return render(request, 'result.html', {'p': facesNumber})
