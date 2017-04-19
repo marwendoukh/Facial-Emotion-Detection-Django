@@ -25,7 +25,7 @@ def index(request):
        # flags = cv2.CV_HAAR_SCALE_IMAGE
     )
 
-    # print faces found
+    # print faces found ......
     facesNumber ="Found {0} faces!".format(len(faces))
 
     return render(request, 'result.html', {'p': facesNumber})
