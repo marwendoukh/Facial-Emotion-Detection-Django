@@ -24,7 +24,7 @@ SECRET_KEY = 'wpd%f(4uzolqcfcn-p@7ohw#!_*a=f^&g%46=g6bvo_9h^rgk0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://facialemotion.herokuapp.com']
 
 # Application definition
 
